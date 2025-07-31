@@ -1,0 +1,24 @@
+{
+	"projects": [		
+		{
+			"title": "📋 Task Flow",
+			"description": "TaskFlow es una aplicación desarrollada para gestionar y optimizar flujos de trabajo y tareas de manera eficiente. El proyecto está enfocado en facilitar la organización personal y profesional, permitiendo la creación, seguimiento y priorización de actividades. \n\nTaskFlow integra una interfaz intuitiva y herramientas que mejoran la productividad, adaptándose a distintos estilos de trabajo y equipos. Su arquitectura modular y escalable permite incorporar nuevas funcionalidades y conectar con otros servicios, convirtiéndola en una solución versátil para la gestión de tareas.\n\n\t· DDD (Domain Driven Design)\n\t· CQRS (Command Query Responsibility Segregation)\n\t· Event Sourcing\n\t· Web API\n\t· Docker",
+			"image": "/img/projects/task-flow.webp",
+			"url": "https://github.com/adesduende/TaskFlow",
+			"technologies": [
+				{
+					"icon": "󰌛",
+					"name": "CSharp"
+				},
+				{
+					"icon": "󰪮",
+					"name": ".NET Core"
+				},
+				{
+					"icon": "󱂛",
+					"name": "Api RESTfull"
+				}
+			]
+		}
+	]
+}

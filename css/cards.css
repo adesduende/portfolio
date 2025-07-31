@@ -1,0 +1,388 @@
+.card {
+    --bg-color1: rgba(29, 29, 29, 1);
+    --bg-color2: rgba(36, 35, 35, 0);
+    background: linear-gradient(110deg, var(--bg-color1), var(--bg-color2));
+    border-radius: 10px;
+    padding: 10px;
+
+    &.profile {
+        width: 1195px;
+        height: 575px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        z-index: 1;
+        padding: 30px;
+
+        &>.profile-image {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: solid 3px #1a3a8c;
+            background-color: #1a3a8c;
+            background-image: url('/img/profile.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center -20px;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        &>.profile-header{
+            grid-row: 1;
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 60px;
+            margin-left: 20px;
+
+            
+        }
+        &>.profile-description {
+            grid-row: 2;
+            grid-column: 1 / span 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            &>p {
+                font-size: 0.75rem;
+                color: #e2e2e2;
+                margin-bottom: 10px;
+            }
+            &>h3{
+                font-size: 1.1em;
+                color: #e2e2e2;
+                margin-bottom: 10px;
+            }
+            &>ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-bottom: 10px;;
+            }
+
+        }
+    }
+    &.skills {
+        width: 474px;
+        height: 380px;
+        grid-column: 2;
+        grid-row: 1;
+        display: grid;
+        justify-content: center;
+        position: relative;
+        &>h2 {
+            display: flex;
+            grid-row: 1;
+            justify-content: center;
+        }
+        &>ul {
+            grid-row: 2;
+            position: relative;
+            align-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 230px;
+            height: 200px;
+
+            &>.skill {
+                width: 60px;
+                height: 60px;
+                background-color: #ffffff28;
+                border-radius: 10px;
+                font-size: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+    }
+    &.socialmedia {
+        --linkedin-icon: url('/img/linkedin.svg');
+        --github-icon: url('/img/github.svg');
+        --email-icon: url('/img/email.svg');
+        width: 474px;
+        height: 190px;
+        grid-column: 2;
+        grid-row: 2;
+        justify-content: center;
+        display: grid;
+        
+            &>h2 {
+                display: flex;
+                grid-row: 1;
+                justify-content: center;
+            }
+            &>ul {
+                grid-row: 2;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                list-style: none;
+                padding: 0;
+
+                &>li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 61px;
+                    height: 61px;
+
+                    &>a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        cursor: pointer;
+                        z-index: 1;
+
+                        &.linkedin {
+                            background-image: var(--linkedin-icon);
+                        }
+                        &.github {
+                            background-image: var(--github-icon);
+                        }
+                        &.email {
+                            background-image: var(--email-icon);
+                        }
+                    }
+                }
+            }
+    }
+    &.projects {
+
+        --csharp-color: #178600;
+        --javascript-color: #f0db4f;
+        --python-color: #306998;
+        --html-color: #e34c26;
+        --css-color: #264de4;
+        --react-color: #61dafb;
+        --node-color: #8cc84b;
+        --java-color: #f89820;
+        --php-color: #4F5D95;
+        --ruby-color: #701516;
+        --go-color: #00ADD8;
+        --typescript-color: #3178c6;
+        --swift-color: #ffac45;
+        --kotlin-color: #0095D5;
+        --rust-color: #dea584;
+        --flutter-color: #02569B;
+        --vue-color: #42b883;
+        --angular-color: #dd0031;
+        --django-color: #092e20;
+        --laravel-color: #f05340;
+        --nextjs-color: #000000;
+        --tailwind-color: #38bdf8;
+        --sass-color: #cc6699;
+        --bootstrap-color: #563d7c;
+        --material-ui-color: #007FFF;
+        --git-color: #f1502f;
+        --docker-color: #2496ed;
+        --aws-color: #232f3e;
+        --azure-color: #0078d4;
+        --kubernetes-color: #326ce5;
+        --mongodb-color: #47a248;
+        --postgres-color: #336791;
+        --mysql-color: #4479a1;
+        --sqlite-color: #003b57;
+        --redis-color: #d82c20;
+        --firebase-color: #ffca28;
+        --graphql-color: #e10098;
+        --nextjs-color: #000000;
+        --net-color: #512BD4;
+        --apirestfull-color: #f1502f;
+
+        width: 1684px;
+        height: auto;
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+        &>.project {
+            width: 100%;
+            height: max-content;
+            display: grid;
+            padding: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            background-color: rgba(29, 29, 29, 0.3);
+            border-radius: 10px;
+            z-index: 1;
+            position: relative;
+
+            &>a {
+                display: block;
+                width: fit-content;
+                height: fit-content;
+                position: relative;
+                grid-column: 1;
+                grid-row: 1 / span 3;
+                &>img {
+                    width: 540px;
+                    height: 330px;
+                    object-fit: cover;
+                    background-color: #e2e2e2;
+                    border-radius: 10px;
+                    margin-right: 50px;
+                }
+            }
+            &>h2{
+                position: relative;
+                height: max-content;
+                display: flex;
+                grid-column: 2 / span 2;
+                grid-row: 1;
+                justify-content: flex-start;
+                align-items: flex-start;
+                font-size: 2.5em;
+                margin: 0;
+                padding: 0;
+            }
+            &>p {
+                position: relative;
+                grid-column: 2 / span 2;
+                grid-row: 1 / span 2;
+                font-size: 1em;
+                color: #e2e2e2;
+                padding-right: 30px;
+                margin-top: 5em;
+                &>pre {
+                    background-color: rgba(36, 35, 35, 0.5);
+                    padding: 10px;
+                    border-radius: 5px;
+                    overflow-x: auto;
+                    white-space: pre-wrap;
+                    text-wrap: wrap;
+                }
+
+            }
+            &>ul {
+                grid-column: 2 / span 2;
+                grid-row: 3;
+                list-style: none;
+                padding: 0;
+                margin-top: 10px;
+                display: flex;
+                width: 100%;
+                height: fit-content;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                &>li {
+                    &[class*="csharp"] { background-color: var(--csharp-color); color: #fff; border: 2px solid #145200; }
+                    &[class*="javascript"] { background-color: var(--javascript-color); color: #fff; border: 2px solid #bba800; }
+                    &[class*="python"] { background-color: var(--python-color); color: #fff; border: 2px solid #204d6b; }
+                    &[class*="html"] { background-color: var(--html-color); color: #fff; border: 2px solid #a8381a; }
+                    &[class*="css"] { background-color: var(--css-color); color: #fff; border: 2px solid #1a357a; }
+                    &[class*="react"] { background-color: var(--react-color); color: #fff; border: 2px solid #2b7a8b; }
+                    &[class*="node"] { background-color: var(--node-color); color: #fff; border: 2px solid #5b8c2a; }
+                    &[class*="java"] { background-color: var(--java-color); color: #fff; border: 2px solid #b36a0f; }
+                    &[class*="php"] { background-color: var(--php-color); color: #fff; border: 2px solid #38405a; }
+                    &[class*="ruby"] { background-color: var(--ruby-color); color: #fff; border: 2px solid #4a0e0e; }
+                    &[class*="go"] { background-color: var(--go-color); color: #fff; border: 2px solid #007199; }
+                    &[class*="typescript"] { background-color: var(--typescript-color); color: #fff; border: 2px solid #205080; }
+                    &[class*="swift"] { background-color: var(--swift-color); color: #fff; border: 2px solid #b97c2e; }
+                    &[class*="kotlin"] { background-color: var(--kotlin-color); color: #fff; border: 2px solid #005a8c; }
+                    &[class*="rust"] { background-color: var(--rust-color); color: #fff; border: 2px solid #a86a3c; }
+                    &[class*="flutter"] { background-color: var(--flutter-color); color: #fff; border: 2px solid #013a5c; }
+                    &[class*="vue"] { background-color: var(--vue-color); color: #fff; border: 2px solid #2c6d5a; }
+                    &[class*="angular"] { background-color: var(--angular-color); color: #fff; border: 2px solid #8a001a; }
+                    &[class*="django"] { background-color: var(--django-color); color: #fff; border: 2px solid #06161a; }
+                    &[class*="laravel"] { background-color: var(--laravel-color); color: #fff; border: 2px solid #b23c1a; }
+                    &[class*="nextjs"] { background-color: var(--nextjs-color); color: #fff; border: 2px solid #222; }
+                    &[class*="tailwind"] { background-color: var(--tailwind-color); color: #fff; border: 2px solid #1a6c8c; }
+                    &[class*="sass"] { background-color: var(--sass-color); color: #fff; border: 2px solid #8c3366; }
+                    &[class*="bootstrap"] { background-color: var(--bootstrap-color); color: #fff; border: 2px solid #392a5c; }
+                    &[class*="material-ui"] { background-color: var(--material-ui-color); color: #fff; border: 2px solid #005080; }
+                    &[class*="git"] { background-color: var(--git-color); color: #fff; border: 2px solid #a12c1a; }
+                    &[class*="docker"] { background-color: var(--docker-color); color: #fff; border: 2px solid #145a8c; }
+                    &[class*="aws"] { background-color: var(--aws-color); color: #fff; border: 2px solid #11181e; }
+                    &[class*="azure"] { background-color: var(--azure-color); color: #fff; border: 2px solid #004080; }
+                    &[class*="kubernetes"] { background-color: var(--kubernetes-color); color: #fff; border: 2px solid #1a3a8c; }
+                    &[class*="mongodb"] { background-color: var(--mongodb-color); color: #fff; border: 2px solid #2c6a2a; }
+                    &[class*="postgres"] { background-color: var(--postgres-color); color: #fff; border: 2px solid #1a3a5c; }
+                    &[class*="mysql"] { background-color: var(--mysql-color); color: #fff; border: 2px solid #2a4a6a; }
+                    &[class*="sqlite"] { background-color: var(--sqlite-color); color: #fff; border: 2px solid #002040; }
+                    &[class*="redis"] { background-color: var(--redis-color); color: #fff; border: 2px solid #8c1a1a; }
+                    &[class*="firebase"] { background-color: var(--firebase-color); color: #fff; border: 2px solid #b89a18; }
+                    &[class*="graphql"] { background-color: var(--graphql-color); color: #fff; border: 2px solid #8c005a; }
+                    &[class*="net"] { background-color: var(--net-color); color: #fff; border: 2px solid #2a185c; }
+                    &[class*="apirestfull"] { background-color: var(--apirestfull-color); color: #fff; border: 2px solid #a12c1a; }
+                    background-color: #232f3e;
+                    color: #fff;
+                    height: 30px;
+                    width: auto;
+                    border-radius: 15px;
+                    padding: 10px;
+                    font-size: 1em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    z-index: 1;
+                    &>i {
+                        margin-right: 5px;
+                        color: rgba(0,0,0,0.4); /* Default fallback */
+                        font-size: 1.5em;
+                    }
+                    &[class*="csharp"] > i { color: #145200; }
+                    &[class*="javascript"] > i { color: #bba800; }
+                    &[class*="python"] > i { color: #204d6b; }
+                    &[class*="html"] > i { color: #a8381a; }
+                    &[class*="css"] > i { color: #1a357a; }
+                    &[class*="react"] > i { color: #2b7a8b; }
+                    &[class*="node"] > i { color: #5b8c2a; }
+                    &[class*="java"] > i { color: #b36a0f; }
+                    &[class*="php"] > i { color: #38405a; }
+                    &[class*="ruby"] > i { color: #4a0e0e; }
+                    &[class*="go"] > i { color: #007199; }
+                    &[class*="typescript"] > i { color: #205080; }
+                    &[class*="swift"] > i { color: #b97c2e; }
+                    &[class*="kotlin"] > i { color: #005a8c; }
+                    &[class*="rust"] > i { color: #a86a3c; }
+                    &[class*="flutter"] > i { color: #013a5c; }
+                    &[class*="vue"] > i { color: #2c6d5a; }
+                    &[class*="angular"] > i { color: #8a001a; }
+                    &[class*="django"] > i { color: #06161a; }
+                    &[class*="laravel"] > i { color: #b23c1a; }
+                    &[class*="nextjs"] > i { color: #222; }
+                    &[class*="tailwind"] > i { color: #1a6c8c; }
+                    &[class*="sass"] > i { color: #8c3366; }
+                    &[class*="bootstrap"] > i { color: #392a5c; }
+                    &[class*="material-ui"] > i { color: #005080; }
+                    &[class*="git"] > i { color: #a12c1a; }
+                    &[class*="docker"] > i { color: #145a8c; }
+                    &[class*="aws"] > i { color: #11181e; }
+                    &[class*="azure"] > i { color: #004080; }
+                    &[class*="kubernetes"] > i { color: #1a3a8c; }
+                    &[class*="mongodb"] > i { color: #2c6a2a; }
+                    &[class*="postgres"] > i { color: #1a3a5c; }
+                    &[class*="mysql"] > i { color: #2a4a6a; }
+                    &[class*="sqlite"] > i { color: #002040; }
+                    &[class*="redis"] > i { color: #8c1a1a; }
+                    &[class*="firebase"] > i { color: #b89a18; }
+                    &[class*="graphql"] > i { color: #8c005a; }
+                    &[class*="net"] > i { color: #2a185c; }
+                    &[class*="apirestfull"] > i { color: #a12c1a; }
+                }
+            }
+        }
+    }
+}
